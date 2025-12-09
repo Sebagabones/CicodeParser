@@ -1,0 +1,16 @@
+/*
+Adds `value` to `InitialCounterValue` (converting it to an INT in the process), unless it is greater than or equal to 100, in which case it returns 0
+*/
+INT FUNCTION IncCounter(STRING InitialCounterValue, INT value)
+    INT IncrementValue;         // TODO: Refactor this to just be value
+    INT counter;
+
+    IncrementValue = value;
+    counter = StrToInt(InitialCounterValue)
+    IF counter < 100 THEN
+        counter = counter + IncrementValue;
+    ELSE
+        counter = 0;
+    END
+    RETURN counter;
+END

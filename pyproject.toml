@@ -1,0 +1,19 @@
+[project]
+name = "cicodeparser"
+version = "0.1.0"
+description = "A *very* simple parser for finding CiCode function definitions"
+readme = "README.md"
+authors = [
+    { name = "Sebgabones", email = "133339614+Sebagabones@users.noreply.github.com" }
+]
+requires-python = ">=3.12.0"
+dependencies = [
+    "parsy-stubs>=2.1.2",
+]
+
+[project.scripts]
+cicodeparser = "cicodeparser:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12.0"
+
+[[package]]
+name = "cicodeparser"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "parsy-stubs" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "parsy-stubs", specifier = ">=2.1.2" }]
+
+[[package]]
+name = "parsy-stubs"
+version = "2.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/60/8d/3e22dac5f983ea17babb40969ddd7627920f8676373d2785e4c555a28f65/parsy_stubs-2.1.2.tar.gz", hash = "sha256:b00a5f8270de0946b621e10a6d40d0b78de32bcacfab3b7c1fe092b444c44209", size = 3246, upload-time = "2024-04-03T07:48:57.302Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/67/3d/ef1a964816cb1881bafe0f905500b7325b6e4494faa8fc1b215567c84604/parsy_stubs-2.1.2-py3-none-any.whl", hash = "sha256:0fb119e8e8a87c224dcad9265ce435ebaa52ce5384ab4b7a548844cb6dcd0757", size = 3835, upload-time = "2024-04-03T07:48:55.794Z" },
+]
